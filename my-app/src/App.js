@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 
+import NewExpense from "./components/NewExpense/NewExpense";
 import "./App.css";
-import NewExpenses from "./components/NewExpenses";
-
-function App() {
+import NewExpenses from "./components/Expenses/NewExpenses";
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div>
+      <NewExpense/>
         <NewExpenses expenses={expenses} />
     </div>
   );
