@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext} from 'react';
 
 import classes from './MealItem.module.css';
 
@@ -33,4 +33,4 @@ const MealItem = props => {
   );
 };
 
-export default MealItem;
+export default React.memo(MealItem);
